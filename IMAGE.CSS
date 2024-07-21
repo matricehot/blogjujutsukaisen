@@ -1,0 +1,577 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100%;
+}
+
+h6 a{
+    color: white;
+}
+
+
+
+
+/* Debut de la liste image */
+
+.Image{
+    margin-bottom: 40px;
+    object-fit: cover;
+}
+
+a img{
+  position: relative;
+  height: 430px;
+  margin: 10px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+/* Fin de la liste image */
+
+
+
+
+.monter ion-icon{
+    height:50px;
+    width: 60px;
+    font-size: 3rem;
+    border: 1 px solid rgba(255, 255, 255, 0.493);
+    position: absolute;
+    right: 0;
+    margin: 40px;
+    margin-left: 100px;
+    color: white;
+    background: black;
+    position: fixed;
+    box-shadow:0px 0px 5px white ;
+    z-index: 1113;
+    border-radius:5px;
+
+}
+
+.prin{
+    height: 80vh;
+    width: 100%;
+}
+
+
+
+.text{
+    z-index: 44;
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    width: 100%;
+    z-index: 2;
+    background:linear-gradient(70deg, black, transparent);
+}
+
+.text h1{
+    color: white;
+}
+
+.place{
+    margin: 190px 0px 0px 80px;
+    width: 30vw;
+    /* border: 2px solid blue; */
+}
+
+.text p {
+    color: white;
+    margin-top: 50px;
+}
+
+.logo{
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+/* debut */
+
+header#shazam{
+    display: none;
+    z-index: 111;
+    height: 100vh;
+    min-width: 300px;
+    background: black;
+    position: fixed;
+    box-shadow:1px 1px 5px white ;
+    border-right: 0.5px solid rgba(255, 255, 255, 0.305);
+    transform: translatex(-104%);
+    transition: 0.5s ease;
+}
+
+header#shazam.open-shazam {
+    transform: translateX(0%);
+}
+
+
+header#shazam .zero{
+    height: 40px;
+    width: 50px;
+    background:black;
+    border:1px solid white;
+    margin-top:40px;
+    margin-left: 330px;
+    position: absolute;
+    border-radius:10px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    content: '';
+    box-shadow:1px 1px 5px white ;
+}
+
+
+header#shazam .zero .un,
+header#shazam .zero .deux,
+header#shazam .zero .trois{
+    width: 50px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+}
+
+header#shazam.open-shazam .zero .un{
+    position: relative;
+    transform: rotate(45deg);
+    top: 18px;
+    height: 3px;
+    transition: 1s;
+
+}
+
+header#shazam.open-shazam .zero .deux{
+    opacity: 0;
+}
+
+header#shazam.open-shazam .zero .trois{
+    position: relative;
+    transform: rotate(-45deg);
+    top: -18px;
+    height: 3px;
+    transition: 1s;
+}
+
+.lien{
+    position: absolute;
+    flex-direction: column;
+    min-width:297px;
+    height: 100%;
+}
+
+.lien h6{
+    font-size: 2.5rem;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.246);
+}
+
+.AB{
+    border-bottom: 1px solid rgba(136, 126, 126, 0.416);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color:white;
+    list-style: none;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-left: 10px;
+}
+
+.home{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    text-decoration: none;
+    padding-right: 100px;
+}
+
+.A{
+   border: 2px solid red;
+}
+
+
+
+/* fin */
+
+
+.MENU{
+    position: fixed;
+    right: 0;
+    width: 100vw;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.942);
+    border-bottom: 1px solid rgb(84, 78, 78) ;
+    z-index: 1111;
+}
+
+ul{
+    display: flex;
+    text-align: center;
+    justify-tracks: center;
+    margin: 0 auto;
+    width: 60vw;
+    margin-top: 30px;
+}
+
+li a{
+    margin-left: 200px;
+    color: white;
+    font-size: 1rem;
+    text-decoration:underline;
+    cursor: pointer;
+
+}
+
+li a:hover{
+    color: rgb(109, 111, 111);
+}
+
+h6:hover{
+    color: rgb(109, 111, 111);
+}
+
+.home{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    text-decoration: none;
+    padding-right: 100px;
+}
+
+.A{
+   border: 2px solid red;
+}
+
+footer{
+    border: 0px;
+}
+
+
+
+/* 
+img{
+    background-size: cover;
+    object-fit: cover;
+    height:160px;
+    width: 160px;   
+    cursor: pointer;
+    border: 1px solid blue;
+
+} */
+
+
+.prase{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 60px;
+    box-shadow: 1px 1px 10px black;
+    line-height: 30px;
+}
+
+
+.luise{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;   
+   border-top: 3px solid grey;
+   border-top: 2px solid rgba(255, 255, 255, 0.404);
+   color: white;
+   background: black;
+}
+
+
+.luise a ion-icon{
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 2px;
+    border-radius:5px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 5px white;
+}
+
+a ion-icon:hover{
+    color: rgb(109, 111, 111);
+}
+
+.sixe{
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace;
+    margin: 40px;
+    display: flex;
+    letter-spacing: 20px;
+}
+
+
+
+@media (max-width:1700px){
+    a img{
+        height: 380px;
+      }
+      
+}  
+
+@media (max-width:1510px){
+    a img{
+        height: 330px;
+      }
+      
+}
+
+@media (max-width:1320px){
+    a img{
+        height: 280px;
+      }
+      
+}
+
+
+@media (max-width:1245px){
+    ul{
+        margin-right: 400px;
+     }
+
+
+.PLA{
+    font-size: 0.7rem;
+}
+
+}
+
+@media (max-width:1130px){
+    a img{
+        height: 230px;
+      }
+      
+}
+
+@media (max-width:1000px){
+
+   
+
+li a{
+    margin-left: 130px;
+}
+}
+
+@media (max-width:940px){
+
+    .Image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    a img{
+        height: 400px;
+      }
+      
+}
+
+@media (max-width:930px){
+
+   .place{
+        margin-top: 200px;
+        transition: 1s;
+    }
+
+}
+
+@media (max-width:800px){
+    .MENU{
+        display: none;
+    }
+
+    header#shazam{
+        display: flex;
+        opacity: 1;
+    }
+
+    a img{
+        height: 330px;
+      }
+      
+
+}
+
+@media (max-width:700px){
+  
+
+     .sixe{
+        font-size: 1.5rem;
+        font-family:'Courier New', Courier, monospace;
+        margin: 30px;
+        letter-spacing: 20px;
+    }
+
+    .prase{
+        font-size: 13px;
+        margin-top: 50px;
+    }
+
+    a img{
+        height: 300px;
+      }
+      
+
+}
+
+
+@media (max-width:630px){
+
+    .prase{
+        line-height: 20px;
+    }
+
+    a img{
+        height: 260px;
+      }
+      
+    
+}
+
+
+@media (max-width:550px){
+
+    .place{
+        margin-left: 25px;
+    }
+
+}
+
+@media (max-width:520px){
+
+    a img{
+        height: 210px;
+
+      }
+ 
+}
+
+@media (max-width:450px){
+    
+/* header#shazam .zero .un,
+header#shazam .zero .deux,
+header#shazam .zero .trois{
+    width: 40px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+
+} */
+
+
+    .PLA{
+        width: 50vw;
+    }
+}
+
+@media (max-width:420px){
+    header#shazam{
+        display: block;
+       min-width:245px;
+    }
+
+    header#shazam.open-shazam .zero .un{
+        transform: rotate(40deg);
+        top: 13px;
+    }
+    
+    header#shazam.open-shazam .zero .trois{
+        transform: rotate(-40deg);
+        top: -13px;
+
+    }
+
+    .lien{
+        min-width:244px;
+    }
+
+    header#shazam .zero{
+        height: 30px;
+        width: 40px;
+        margin-left: 270px;
+        
+    }
+
+    a img{
+        height: 170px;
+
+      }
+
+}
+
+
+
+@media (max-width:370px){
+    header#shazam{
+        min-width:200px;
+    }
+
+    .lien{
+        min-width:199px;
+
+    }
+
+    header#shazam .zero{
+        margin-left:230px;
+    }
+
+    .prase{
+        font-size: 10px;
+    }
+
+}
+
+
+@media (max-width:350px){
+
+    a img{
+        height: 150px;
+      }
+ 
+}
+
+
+@media (max-width:305px){
+    a img{
+        height: 130px;
+      }
+}
+
+@media (max-width:300px){
+    .monter ion-icon{
+        margin-right: 20px;
+    }
+
+    .sixe{
+        font-size: 1rem;
+        letter-spacing: 15px;
+    }
+
+}
+
